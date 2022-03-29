@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">
+            <div class="fixed-top">
+                <a href="/18-dars/master.html"><button class="btn1"><i class="fas fa-long-arrow-alt-left"></i>Back</button></a>
+                <h3>Flexbox App Latout</h3>
+                <i class="fas fa-battery-half battery">47%</i>
+                <a class="button" href="#"><button class="kunopka"><i class="fas fa-cog"></i></button></a>
+            </div>
+            <style>
+                body{
+                    overflow: hidden;
+                    margin: 0;
+                }
+                .boxes{
+                    background-image: linear-gradient(135deg, purple, blue);
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    overflow: hidden;
+                }
+                .box{
+                    overflow: hidden;
+                    border-radius: 40px;
+                    flex-direction: column;
+                    display: flex;
+                    width: 450px;
+                    height: 700px;
+                    border: 10px solid black;
+                    border-bottom: 40px solid black;
+                }
+                .battery{
+                    padding: 10px;
+                }
+                .fixed-top{
+                    top: 0;
+                    position: sticky;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    background-color: orange;
+                }
+                .div{
+                    padding: 0px 50px;
+                }
+                .menu{
+                    font-size: 40px;
+                    padding: 5px 10px;
+                }
+                .link{
+                    text-decoration: none;
+                    list-style-type: none;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: sans-serif;
+                }
+
+                .fixed-bottom{
+                    padding: 5px;
+                    margin-top: 10%;
+                    flex-wrap: wrap;
+                    bottom: 0;
+                    position: sticky;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center;
+                    padding-top: 20px;
+                    background-color: orange;
+                }
+                .div:hover{
+                    box-shadow: 0 0 10px 5px yellow ;
+                    border-radius: 50%;
+                    padding: 0px 30px;
+                    text-align: center;
+                    transition: 0.3s linear;
+                }
+                .btn1{
+                    background-color: yellow;
+                    padding: 5px 10px;
+                    border-radius: 50px;
+                    border: 3px solid black;
+                    box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+                }
+                .btn1:hover{
+                    background-color: black;
+                    color: yellow;
+                    border-radius: 50px;
+                    border: 3px solid yellow;
+                    box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+                    transition: 0.4s linear;
+                }
+                .kunopka{
+                    background-color: yellow;
+                    padding: 5px 10px;
+                    border-radius: 50px;
+                    border: 3px solid black;
+                    box-shadow: 0 0 10px 3px rgb(104, 104, 104);
+                }
+                .kunopka:hover{
+                    background-color: black;
+                    color: yellow;
+                    border-radius: 50px;
+                    border: 3px solid yellow;
+                    box-shadow: 0 0 10px 3px rgb(253, 253, 79);
+                    transition: 0.4s linear;
+                }
+                canvas{                
+                    height: 450px;
+                    width: 450px;
+                    display: block;
+                    margin: 0 auto;
+
+                }
+            </style>
+            <canvas id="snake" width="608" height="608"></canvas>
+            <div class="fixed-bottom">
+               <div class="div">
+                   <a class="link" href="/index7.html">
+                        <i class="fas fa-ellipsis-h menu"></i>
+                        <br>
+                        <i class="fas fa-ellipsis-h menu"></i>
+                        <br>
+                        Menu
+                    </a>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="snake.js"></script>
+</html>
+</body>
+</html>
